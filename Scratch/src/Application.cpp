@@ -68,7 +68,7 @@ int main(void)
     shader.SetUniform4f("u_Color", 0.8f, 0.3f, 0.8f, 1.0f);
     
     Texture texture("res/textures/Nic.png");
-    texture.Bind(2);
+    texture.Bind();
     shader.SetUniform1i("u_Texture", 0);
     va.Unbind();
     vb.Unbind();
